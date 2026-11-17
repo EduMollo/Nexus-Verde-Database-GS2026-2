@@ -14,25 +14,7 @@ CitizenTech para organizar pedidos de acesso a água potável e localizar pontos
 | Mathaus Victor Souza Marcelino | 564146 |
 | Vinicius Luis Exposito Morassi | 563340 |
 
-## Resultado validado
-
-Execução real em 17/11/2026 na conta Oracle FIAP e MongoDB Community 8.0.5: **17 objetos Oracle principais válidos**, sem erros de compilação; **16 solicitações + 8 pontos de água** importados; conteúdo completo e reimportação conferidos; **3 relatórios iguais**. Veja `evidencias/` para saídas e hashes. Todos os nomes, endereços e dados quantitativos da carga são fictícios; não representam um levantamento real das cidades.
-
-| Critério do PDF, páginas 71-76 | Implementação | Evidência |
-|---|---|---|
-| Modelo e 2 blocos PL/SQL (10) | 6 tabelas relacionadas; `sql/01_estrutura.sql`, `06_blocos.sql` | Modelos em `docs/`; `testes_oracle.txt` |
-| 2 funções e 2 procedimentos (15) | Prioridade, transições, criação, alteração de status | `02_solicitacoes.sql`, `07_testes.sql` |
-| 2 gatilhos e auditoria (10) | Validação/prioridade e auditoria de INSERT/UPDATE/DELETE | `03_auditoria.sql`, teste de valores antigo/novo e rollback |
-| 2 pacotes com spec/body e testes (10) | 3 pacotes: solicitações, auditoria, relatórios | `objetos_oracle.json`, `testes_oracle.txt` |
-| 2 collections e 10+ documentos (10) | 2 collections; 24 documentos; createCollection/insertMany | `mongodb/01_estrutura.js`, `02_importar.js` |
-| Mapeamento e 3 relatórios (15) | find + 2 aggregates equivalentes a views Oracle | `docs/MAPEAMENTO.md`, `validacao_mongodb.json` |
-| Apresentação presencial (30) | Roteiro com demonstrações e perguntas | `docs/APRESENTACAO.md` |
-
-O PDF da GS é a regra de avaliação. A GS não exige integração automática Oracle-MongoDB ou chamada de procedures pelo backend Java. Os scripts JDBC desta entrega chamam as procedures Oracle de fato. O backend Java continua independente, usando PostgreSQL/H2. A estrutura de organização da CS4 foi usada como referência, adaptada ao domínio Nexus Verde.
-
 ## Execução Oracle
-
-Requisitos: **JDK 21**, acesso de rede ao Oracle FIAP 19c e driver oficial `ojdbc11`. Não usar senhas no terminal, no Git ou em arquivos de entrega.
 
 Na primeira execução:
 
@@ -145,17 +127,3 @@ Validação do material e geração do ZIP (Python 3.10+, somente biblioteca pad
 python tools/validar_entrega.py
 python tools/empacotar.py
 ```
-
-O ZIP exclui `.env`, `.git`, `.cache`, temporários e dependências locais. PDFs podem ser reproduzidos com `pip install -r tools/requirements-docs.txt` e `python tools/gerar_documentacao.py`. O CI executa MongoDB e verifica os arquivos entregues; os testes Oracle dependem da conexão FIAP e são comprovados nas evidências locais, sem divulgar credenciais no GitHub.
-
-## Uso de IA generativa
-
-ChatGPT/Codex apoiou a inspeção dos requisitos e do Java, adaptação dos scripts, implementação de testes, comparação de dados, revisão e documentação. Os resultados de execução automática estão em `evidencias/`. Cada integrante deve ler, revisar e compreender o código e as decisões antes da apresentação; a geração e a validação automática não substituem essa preparação.
-
-## Referências
-
-- Guia FIAP: Global Solution 2026/2 CitizenTech, páginas 71-76 (Database) e 15-17 (entrega/IA).
-- [Java Nexus Verde, commit d8715e9](https://github.com/EduMollo/Nexus-Verde-Java-GS2026-2/tree/d8715e9e0348f17c4acd70d3d1405385c5921bae).
-- [CS4 Database do grupo](https://github.com/EduMollo/EcoCreate-BD-Challenge-Sprint-2026-parte-4), referência de organização e execução, com domínio adaptado.
-- [Oracle 19c - PL/SQL Language Reference](https://docs.oracle.com/en/database/oracle/oracle-database/19/lnpls/).
-- [MongoDB - Schema Validation](https://www.mongodb.com/docs/manual/core/schema-validation/) e [Aggregation](https://www.mongodb.com/docs/manual/aggregation/).
