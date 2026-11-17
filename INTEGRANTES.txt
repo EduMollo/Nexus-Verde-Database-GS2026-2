@@ -1,0 +1,11 @@
+NEXUS VERDE - GLOBAL SOLUTION 2026/2
+Disciplina: Mastering Relational and Non-Relational Database
+Turma de todos os integrantes: 2TDSPF
+
+Carlos Alberto Guedes Neto - RM 566022 - 2TDSPF
+Eduardo Novaes Mollo - RM 561515 - 2TDSPF
+Luan Peixoto Marins Rocha - RM 562258 - 2TDSPF
+Mathaus Victor Souza Marcelino - RM 564146 - 2TDSPF
+Vinicius Luis Exposito Morassi - RM 563340 - 2TDSPF
+
+Repositorio: https://github.com/EduMollo/Nexus-Verde-Database-GS2026-2

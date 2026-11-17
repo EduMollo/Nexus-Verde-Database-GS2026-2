@@ -1,0 +1,35 @@
+{
+  "executadoEm": "2026-11-17T22:23:58.862Z",
+  "versaoMongoDB": "8.0.5",
+  "solicitacoes": 16,
+  "pontosAgua": 8,
+  "documentosConferidosIntegralmente": true,
+  "reimportacaoSemDuplicacao": true,
+  "validadoresRejeitamInvalidos": true,
+  "relatorios": [
+    {
+      "relatorio": "fila",
+      "linhasOracle": 8,
+      "linhasMongoDB": 8,
+      "igual": true,
+      "sha256Oracle": "a6d4907b36084b1047c4eb2903d34f2b7eaaf0b8c3009f22a1e0d1770d1e5767",
+      "sha256MongoDB": "a6d4907b36084b1047c4eb2903d34f2b7eaaf0b8c3009f22a1e0d1770d1e5767"
+    },
+    {
+      "relatorio": "demanda",
+      "linhasOracle": 16,
+      "linhasMongoDB": 16,
+      "igual": true,
+      "sha256Oracle": "3b62bfb8a60b0b75f8413dcef42f1496602c99b5cf01d5056ab9e4865ddbc7e1",
+      "sha256MongoDB": "3b62bfb8a60b0b75f8413dcef42f1496602c99b5cf01d5056ab9e4865ddbc7e1"
+    },
+    {
+      "relatorio": "estoque",
+      "linhasOracle": 4,
+      "linhasMongoDB": 4,
+      "igual": true,
+      "sha256Oracle": "02a6d4a20b7130120ad527ee688bd75206a2ac459a3ca61f4ae66d02c439b174",
+      "sha256MongoDB": "02a6d4a20b7130120ad527ee688bd75206a2ac459a3ca61f4ae66d02c439b174"
+    }
+  ]
+}

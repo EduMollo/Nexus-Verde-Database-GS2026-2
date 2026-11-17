@@ -1,0 +1,7 @@
+.env
+.cache/
+tmp/
+output/
+*.class
+evidencias/*.log
+evidencias/resultado-local.json

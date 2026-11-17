@@ -1,0 +1,18 @@
+Oracle 19 conectado; credenciais omitidas.
+17 objetos principais VALID; USER_ERRORS vazio.
+APROVADO: funcoes, procedures, excecoes, gatilhos, JSON, historico, idempotencia e rollback.
+07_testes.sql: executado.
+Pedido 8 prioridade 79
+Pedido 12 prioridade 76
+Pedido 4 prioridade 75
+Pedido 16 prioridade 75
+Pedido 9 prioridade 40
+Pedido 5 prioridade 31
+Pedido 1 prioridade 27
+Pedido 13 prioridade 27
+Pendentes: 8; prioridade >=70: 4
+Conferir ponto 2: estoque 500 litros
+Conferir ponto 4: estoque 0 litros
+Conferir ponto 6: estoque 0 litros
+Pontos para conferencia: 3
+06_blocos.sql: executado.

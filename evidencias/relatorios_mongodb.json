@@ -1,0 +1,160 @@
+{
+  "fila": [
+    {
+      "id": 8,
+      "prioridade": 79,
+      "regiaoId": 2,
+      "urgencia": "CRITICA"
+    },
+    {
+      "id": 12,
+      "prioridade": 76,
+      "regiaoId": 3,
+      "urgencia": "CRITICA"
+    },
+    {
+      "id": 4,
+      "prioridade": 75,
+      "regiaoId": 1,
+      "urgencia": "CRITICA"
+    },
+    {
+      "id": 16,
+      "prioridade": 75,
+      "regiaoId": 4,
+      "urgencia": "CRITICA"
+    },
+    {
+      "id": 9,
+      "prioridade": 40,
+      "regiaoId": 3,
+      "urgencia": "BAIXA"
+    },
+    {
+      "id": 5,
+      "prioridade": 31,
+      "regiaoId": 2,
+      "urgencia": "BAIXA"
+    },
+    {
+      "id": 1,
+      "prioridade": 27,
+      "regiaoId": 1,
+      "urgencia": "BAIXA"
+    },
+    {
+      "id": 13,
+      "prioridade": 27,
+      "regiaoId": 4,
+      "urgencia": "BAIXA"
+    }
+  ],
+  "demanda": [
+    {
+      "quantidade": 1,
+      "regiaoId": 1,
+      "status": "ABERTA"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 1,
+      "status": "ATENDIDA"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 1,
+      "status": "CANCELADA"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 1,
+      "status": "EM_ATENDIMENTO"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 2,
+      "status": "ABERTA"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 2,
+      "status": "ATENDIDA"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 2,
+      "status": "CANCELADA"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 2,
+      "status": "EM_ATENDIMENTO"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 3,
+      "status": "ABERTA"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 3,
+      "status": "ATENDIDA"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 3,
+      "status": "CANCELADA"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 3,
+      "status": "EM_ATENDIMENTO"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 4,
+      "status": "ABERTA"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 4,
+      "status": "ATENDIDA"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 4,
+      "status": "CANCELADA"
+    },
+    {
+      "quantidade": 1,
+      "regiaoId": 4,
+      "status": "EM_ATENDIMENTO"
+    }
+  ],
+  "estoque": [
+    {
+      "capacidadeLitros": 14000,
+      "estoqueLitros": 7500,
+      "pontos": 2,
+      "regiaoId": 1
+    },
+    {
+      "capacidadeLitros": 14000,
+      "estoqueLitros": 7000,
+      "pontos": 2,
+      "regiaoId": 2
+    },
+    {
+      "capacidadeLitros": 10000,
+      "estoqueLitros": 7000,
+      "pontos": 2,
+      "regiaoId": 3
+    },
+    {
+      "capacidadeLitros": 10000,
+      "estoqueLitros": 7000,
+      "pontos": 1,
+      "regiaoId": 4
+    }
+  ]
+}
