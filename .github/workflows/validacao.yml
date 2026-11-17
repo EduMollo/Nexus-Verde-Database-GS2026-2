@@ -1,0 +1,23 @@
+name: Validacao Database
+on: [push, pull_request]
+jobs:
+  mongodb-e-entrega:
+    runs-on: ubuntu-latest
+    services:
+      mongodb:
+        image: mongo:8.0
+        ports: ['27017:27017']
+        options: >-
+          --health-cmd "mongosh --quiet --eval 'db.adminCommand({ping:1}).ok'"
+          --health-interval 5s --health-timeout 5s --health-retries 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Importar, testar e comparar com snapshot Oracle
+        run: >-
+          docker run --rm --network host
+          --user "$(id -u):$(id -g)" --env HOME=/tmp
+          --volume "$PWD:/projeto" --workdir /projeto
+          --entrypoint mongosh mongo:8.0 mongodb://127.0.0.1:27017
+          --quiet --file mongodb/04_validar.js
+      - name: Conferir entregaveis e hashes
+        run: python3 tools/validar_entrega.py

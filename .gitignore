@@ -1,0 +1,9 @@
+.env
+.cache/
+tmp/
+output/
+*.class
+*.pyc
+__pycache__/
+evidencias/*.log
+evidencias/resultado-local.json
