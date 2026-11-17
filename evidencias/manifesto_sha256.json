@@ -2,7 +2,7 @@
   ".env.example": "929ab09a8732dfe4cfc084b37ac059563c1a15f30e9f46b126f2f9de092f50f1",
   ".gitattributes": "6ef30235be93d6a8476dc1d39f9a6d7ccfa661304874a9f6e8f43fb12f88c183",
   ".github/workflows/validacao.yml": "b02e82beb30f5964680d8cd7343e8a2e7391184a6e70c4c5cff8a2207a07feb3",
-  ".gitignore": "568ffe3f201fbe4e0eba869ca4015d0b09a3a03195f397120def2b2b206abefa",
+  ".gitignore": "278802f6df0ee4f33640f3ce541dba1a130da201366f5a68611c7da592925b24",
   "compose.yml": "571617837c77d18161078754d9ac54670e3d434d6d3ec57f9c50aa8cb00ea6a3",
   "configurar-oracle.ps1": "326ff2878bd91abf5e2c9128f0ea083c64264fc662b5f2c8c640ae13770c7f5b",
   "dataset/pontos_agua.json": "ff5733406bc22c06ee867b81af93f2aa7ab1e43c8a42af9c508730b5317225d7",
