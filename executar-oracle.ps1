@@ -1,6 +1,6 @@
 param([ValidateSet('check','install','compile','seed','test','demo','export','all')][string]$Acao='check')
 $ErrorActionPreference='Stop'
-if (-not $env:PATHEXT) { $env:PATHEXT='.COM;.EXE;.BAT;.CMD' }
+if ($env:PATHEXT -notmatch '(^|;)\.EXE(;|$)') { $env:PATHEXT='.EXE;'+$env:PATHEXT }
 Push-Location $PSScriptRoot
 try {
  $driver = $env:ORACLE_JDBC_JAR

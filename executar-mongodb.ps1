@@ -1,6 +1,6 @@
 param([ValidateSet('import','report','test')][string]$Acao='test')
 $ErrorActionPreference='Stop'
-if (-not $env:PATHEXT) { $env:PATHEXT='.COM;.EXE;.BAT;.CMD' }
+if ($env:PATHEXT -notmatch '(^|;)\.EXE(;|$)') { $env:PATHEXT='.EXE;'+$env:PATHEXT }
 Push-Location $PSScriptRoot
 try {
  $shell = if ($env:MONGOSH_EXE) { $env:MONGOSH_EXE } else { 'mongosh' }

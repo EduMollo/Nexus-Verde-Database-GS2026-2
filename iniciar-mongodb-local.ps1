@@ -1,5 +1,5 @@
 $ErrorActionPreference='Stop'
-if (-not $env:PATHEXT) { $env:PATHEXT='.COM;.EXE;.BAT;.CMD' }
+if ($env:PATHEXT -notmatch '(^|;)\.EXE(;|$)') { $env:PATHEXT='.EXE;'+$env:PATHEXT }
 $cache=Join-Path $PSScriptRoot '.cache/mongodb'
 $server=Join-Path $cache 'server/mongodb-win32-x86_64-windows-8.0.5/bin/mongod.exe'
 $shell=Join-Path $cache 'shell/mongosh-2.5.10-win32-x64/bin/mongosh.exe'
