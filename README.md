@@ -110,7 +110,7 @@ As referências Oracle permanecem no banco relacional; o snapshot documental nã
 
 Pedidos excluídos logicamente não entram na fila nem na demanda. Demanda inclui cancelados sem exclusão lógica. Região ausente fica null na fila e 0 nas agregações. Pontos fechados não entram no estoque; pontos com estoque/capacidade zero entram. Ordenação de status usa comparação binária no MongoDB e valores enum maiúsculos no Oracle. A validação compara todas as linhas, ordenação e valores e registra SHA-256 de representações canônicas.
 
-Consulte `sql/08_consultas_apresentacao.sql` para visualizar funções, objetos, auditoria e consultas equivalentes. `docs/APRESENTACAO.md` organiza a demonstração presencial de 23 a 27/11. O envio ao Portal FIAP deve ser realizado pelo grupo até **19/11/2026 às 23h55**.
+Consulte `sql/08_consultas_apresentacao.sql` para visualizar funções, objetos, auditoria e consultas equivalentes.
 
 ## Evidências, documentação e pacote
 
@@ -121,9 +121,3 @@ Consulte `sql/08_consultas_apresentacao.sql` para visualizar funções, objetos,
 - `evidencias/execucao_mongodb.txt` e `validacao_mongodb.json`: conteúdo, reimportação, validação e hashes dos três relatórios.
 - `docs/Nexus-Verde-Modelo-Logico.pdf`, `Nexus-Verde-Modelo-Fisico.pdf`, `Nexus-Verde-Database-Documentacao.pdf`: modelos, dicionário, regras, execução, resultados e evidências.
 
-Validação do material e geração do ZIP (Python 3.10+, somente biblioteca padrão):
-
-```powershell
-python tools/validar_entrega.py
-python tools/empacotar.py
-```
